@@ -38,7 +38,7 @@ extraEnv: |
   #       key: expose-keycloak-service-key
 
 javaOpts:
-  xmx: 2046m
+  xmx: 4096m
   xms: 512m
   other: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
 image:
