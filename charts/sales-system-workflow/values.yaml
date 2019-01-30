@@ -42,7 +42,7 @@ javaOpts:
   xms: 512m
   other: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
 image:
-  repository: registry.wosai-inc.com/sales-system-wrokflow
+  repository: registry.cn-qingdao.aliyuncs.com/cdyx/sales-system-workflow
   tag: 0.0.1
   pullPolicy: IfNotPresent
 service:
