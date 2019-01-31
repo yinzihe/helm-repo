@@ -43,7 +43,7 @@ javaOpts:
   other: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
 image:
   repository: registry.cn-qingdao.aliyuncs.com/cdyx/sales-system-workflow
-  tag: 0.0.2
+  tag: 0.0.4
   pullPolicy: IfNotPresent
 service:
   name: sales-system-workflow
@@ -54,10 +54,10 @@ service:
     fabric8.io/expose: "false"
 resources:
   limits:
-    memory: 768Mi
+    memory: 2046Mi
   requests:
     cpu: 400m
-    memory: 768Mi
+    memory: 2046Mi
 probePath: /actuator/health
 livenessProbe:
   initialDelaySeconds: 140
